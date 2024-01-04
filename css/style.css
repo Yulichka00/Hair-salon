@@ -1,0 +1,473 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+header {
+  width: 100%;
+  /*border: 1px solid red;*/
+  background-color: white;
+  background-repeat: no-repeat;
+}
+
+.navIcon {
+  width: 2rem;
+  visibility: hidden;
+}
+
+.headerNav {
+  /*border: 3px solid aqua;*/
+  width: 100%;
+  overflow: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.searchIcon, .shoppingBagIcon {
+  width: 2rem;
+  /*border: 1px solid lime;*/
+}
+
+.navLink {
+  list-style-type: none;
+  /*border: 1px solid violet;*/
+}
+
+/* nav li */
+.headerNav .navLink {
+  float: left;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+
+.headerNav .navLink:first-child {
+  margin-right: 5rem;
+}
+
+.headerNav .navLink:last-child {
+  margin-left: 5rem;
+}
+
+.logo {
+  height: 5rem;
+  margin-top: -1.7rem;
+  margin-bottom: 1rem;
+}
+
+body{
+  background-image: url(/images/main-image01.jpg);
+  background-size: 110vw;
+  background-repeat: no-repeat;
+  
+}
+
+.mainPageBanner .mainPageContent {
+  position: relative;
+  /*border: 1px solid white;*/
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 18%;
+}
+
+.mainPageBanner h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 8rem;
+  line-height: 13rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.mainPageBanner p {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.mainPageBanner a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  padding: 1.5rem 4rem;
+  background-color: black;
+}
+
+.firstVisitDiscount {
+  /*border: 1px solid red;*/
+  position: relative;
+  width: 18%;
+  height: 43vh;
+  margin-left: 10%;
+  margin-top: 6%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 12rem;
+  background-color: black;
+}
+
+.firstVisitDiscount h4 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: white;
+  border-left: 3px solid white;
+  margin-left: -2rem;
+  padding-left: 1.5rem;
+  line-height: 4rem;
+}
+
+.firstVisitDiscount span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.firstVisitDiscount p {
+  color: white;
+  line-height: 2.7rem;
+}
+
+.firstVisitDiscount a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: black;
+  padding: 1.5rem 4rem;
+  background-color: white;
+}
+
+.schedule h3 {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: white;
+  transform: rotate(90deg);
+  top: 67.5%;
+  right: -7rem;
+}
+.leftArrow {
+  transform: rotateY(180deg);
+}
+
+.arrow {
+  width: 3rem;
+}
+
+.arrows {
+  position: absolute;
+  top: 96rem;
+  left: 110rem;
+}
+
+.services {
+  position: relative;
+  height: 50vh;
+  background-color: white;
+  /*border: 1px solid red;*/
+}
+
+.services ul {
+  /*border: 3px solid aqua;*/
+  padding-left: 20%;
+}
+
+.services ul > li {
+  float: left;
+  /*border: 1px solid lime;*/
+  width: 20%;
+  margin: 3rem 3rem;
+  text-align: center;
+  list-style-type: none;
+}
+
+.greyCircle {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  top: 3.5rem;
+  left: 6.5rem;
+  z-index: 0;
+  background-color: rgb(244, 238, 238);
+  border-radius: 50%;
+}
+
+.icon {
+  height: 5rem;
+  z-index: 1;
+}
+
+.chairIcon, .creamIcon, .beautyIcon {
+  transform: rotateY(180deg);
+}
+
+.beautyIcon {
+  z-index: 10;
+  left: -0.1rem;
+}
+
+.services h6 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.services p {
+  font-size: 1.2rem;
+}
+
+.momentumContainer {
+  background-color: #f6f2f2;
+  height: 70vh;
+  margin-top: 0;
+  padding-top: 7%;
+}
+
+.momentumContent {
+  width: 60%;
+  /*border: 3px solid red;*/
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  overflow: auto;
+}
+
+.textBox, .hairdressing {
+  float: right;
+  width: 50%;
+  padding: 0 2.5%;
+}
+
+.hairdressing {
+  width: 50%;
+  transform: rotateY(-180deg);
+  float: right;
+  padding-top: 0;
+}
+
+.textBox {
+  float: left;
+}
+
+.momentumContent h2 {
+  font-size: 3rem;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.momentumContent p {
+  font-size: 1.45rem;
+  margin-bottom: 4rem;
+  line-height: 2rem;
+}
+
+.momentumContent a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  padding: 1.5rem 4rem;
+  background-color: black;
+}
+
+.hairdressersContainer {
+  /*border: 1px solid red;*/
+  background-color: white;
+  height: 70vh;
+  padding-top: 7%;
+}
+
+.hairdresserContent {
+  /*border: 3px solid #00ff00;*/
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  overflow: auto;
+}
+
+.hairdresserContent .hairDresserBox {
+  position: relative;
+  /*border: 2px solid violet;*/
+  float: left;
+  width: 30%;
+  list-style-type: none;
+  margin: 0.1rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hairdresserContent h6 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hairdresserContent span {
+  font-size: 1.3rem;
+}
+
+.stylist {
+  height: 28rem;
+  width: 22rem;
+  object-fit: cover;
+}
+
+.nameSpecialty {
+  position: absolute;
+  /*border: 1px solid red;*/
+  padding: 0.1rem 1rem 1.5rem;
+  top: 24rem;
+  left: 4.5rem;
+  color: white;
+  background-color: black;
+  width: 19rem;
+}
+
+.dayOfferContainer {
+  background-color: white;
+  height: 90vh;
+  margin-top: 0;
+  padding-top: 5%;
+}
+
+.dayOfferContent {
+  width: 70%;
+  /*border: 3px solid red;*/
+  background-color: #f6f2f2;
+  margin-left: 15%;
+  margin-right: 15%;
+  /*padding-top: 2%;
+  padding-bottom: 2%;*/
+  overflow: auto;
+}
+
+.funkyGirl {
+  box-sizing: border-box;
+  width: 50rem;
+  float: right;
+  padding-bottom: 0;
+}
+
+.bannerTextBox {
+  /*border: 1px solid lime;*/
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 19%;
+  text-transform: uppercase;
+}
+
+.bannerTextBox h5{
+  font-size: 1.5rem;
+}
+
+.bannerTextBox p {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  padding-bottom: 2rem;
+}
+
+.bannerTextBox span {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.bannerTextBox a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  padding: 1.5rem 4rem;
+  background-color: black;
+}
+
+.lookBookContainer {
+  background-color: white;
+  height: 100vh;
+  margin-top: 0;
+  padding-top: 5%;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.lookBookContent {
+  width: 98%;
+  /*border: 3px solid red;
+  background-color: #f6f2f2;*/
+  /*background-color: red;*/
+  /*padding-top: 2%;
+  padding-bottom: 2%;*/
+  overflow: auto;
+}
+
+.lookBookContent h3{
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.photo {
+  width: 27rem;
+  height: 10%;
+  padding-bottom: 3rem;
+}
+
+.photo01, .photo04, .photo05 {
+  height: 50vh;
+  object-fit: cover;
+}
+
+.photo02, .photo03, .photo06 {
+  height: 60vh;
+  object-fit: cover;
+}
+
+.photoContainer ul {
+  float: left;
+}
+
+.photoContainer ul li{
+  list-style-type: none;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
