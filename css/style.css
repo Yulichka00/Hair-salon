@@ -470,7 +470,7 @@ body{
 /* LAYOUT
 /*******************************************/
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 420px) {
   
   html {
     box-sizing: border-box;
@@ -965,8 +965,4 @@ body{
     padding: 0;
   }
 
-  
-  
-  
 }
-
