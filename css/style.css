@@ -89,7 +89,7 @@ a {
 }
 
 body{
-  background-image: url(/images/main-image01.jpg);
+  background-image: url(../images/main-image01.jpg);
   background-size: 110vw;
   background-repeat: no-repeat;
   
@@ -547,7 +547,7 @@ body{
   }
   
   body{
-    background-image: url(/images/main-image02.jpg);
+    background-image: url(../images/main-image02.jpg);
     background-size: 60vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
