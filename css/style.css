@@ -840,13 +840,14 @@ body{
   
   .dayOfferContainer {
     background-color: white;
-    height: 80vh;
+    height: 90vh;
     margin-top: 0%;
     padding-top: 0%;
   }
   
   .dayOfferContent {
     width: 100%;
+    height: 85vh;
     /*border: 3px solid red;*/
     background-color: #f6f2f2;
     margin-left: 0%;
@@ -905,7 +906,6 @@ body{
   .lookBookContainer {
     background-color: white;
     height: 200vh;
-    margin-top: 0;
     padding-top: 5%;
     text-align: center;
     padding-left: 0%;
